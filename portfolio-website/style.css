@@ -1,0 +1,185 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: tomato;
+    
+    
+  }
+  
+  body {
+    font-family:monospace;
+    
+  }
+  
+  header h1 {
+    color: rgb(39, 37, 37);
+    font-family:fantasy;
+    font-size: 100px; 
+    background-color: bisque;
+    opacity: 0.5;
+    margin-top: 10px;
+    padding: 20px;
+  }
+
+  header .container {
+    height: 150px;
+  }
+
+
+.round {
+  border: black 10px solid;
+  border-radius:50%;  
+  
+	}
+
+.round img {
+     border-radius:50%; 
+}
+
+button {
+  width: 154px;
+  height: 30px;
+  border-radius: 2.2px;
+  background-color: black;
+  color: tomato;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#contact {
+  font-size: 20px;
+  
+}
+
+
+ 
+/*Typing CSS words */
+
+  .wrapper {
+    height: 20vh;
+    /*This part is important for centering*/
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(22, 22, 21);
+    
+  }
+  
+  .typing-demo {
+    width: 50ch;
+    animation: typing 3s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 3em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+  
+  nav { 
+    background: #000;
+    height: 80px; 
+    width: 100%;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+    
+  }
+  
+  nav ul {
+    height: 80px;
+    list-style: none;
+    margin: 0 auto; 
+    padding: 0; 
+    
+  }
+  
+  nav ul li {
+    color: tomato;
+    display: inline-block; 
+    height: 80px;
+    line-height: 80px; 
+    list-style: none;
+    padding: 0 10px;
+    transition: background .5s; 
+   
+  }
+  
+  .btn:hover, nav ul li:hover {
+    background: rgb(250, 246, 245);
+    color: tomato;
+    opacity: 0.8;
+    font-weight: bold;
+    cursor: pointer; 
+    transition: background .5s;  
+  }
+
+ #about-me {
+     background-color: rgb(250, 246, 246);
+    text-align: left;
+    color: black;
+    padding: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 45px;
+    border: tomato 20px solid;
+    border-radius: 10%;
+    
+ }
+
+ #about-me h2 {
+  font-size: 50px;
+  color: tomato;
+  
+ }
+
+ #about-me img {
+   display: flex;
+  justify-self:flex-end
+  
+ }
+
+ @media only screen and (max-width: 800px) {
+  body {
+      font-size: 12px;
+  }
+
+  header {
+    display: none;
+  }
+
+  nav li {
+    font-size: 14px;
+  }
+
+  .typing-demo {
+    font-size: 12px;
+ }
+
+}
+  
+@media only screen and (min-resolution: 150dpi) {
+  body {
+      font-size: 12px;
+  }
+
+  header {
+    display: none;
+  }
+
+  nav li {
+    font-size: 14px;
+  }
+} 
